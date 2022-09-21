@@ -2,37 +2,37 @@ const lists = {
     groceries: [
         {
             id: 1,
-            item: "green apples",
+            groceryItem: "green apples",
             quantity: "10",
             description: ""
         }, 
         {
             id: 2,
-            item: "bell peppers",
+            groceryItem: "bell peppers",
             quantity: "2",
             description: "1 red and 1 striped"
         },
         {
             id: 3,
-            item: "onion",
+            groceryItem: "onion",
             quantity: "1",
             description: "NOT Organic"
         },
         {
             id: 4,
-            item: "Siggi's Yogurt",
+            groceryItem: "Siggi's Yogurt",
             quantity: "5",
             description: "2 Raspberry and 3 Mixed berry"
         },
         {
             id: 5,
-            item: "Dave's Killer Bread",
+            groceryItem: "Dave's Killer Bread",
             quantity: "1",
             description: "21 Whole Grains"
         },
         {
             id: 6,
-            item: "Coffee",
+            groceryItem: "Coffee",
             quantity: "1",
             description: "Whole bean NOT ground"
         }
