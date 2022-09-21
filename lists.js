@@ -40,35 +40,35 @@ const lists = {
     whitWishList: [
         {
             id: 1,
-            item: "Bike Lights",
-            quantity: "1",
-            description: "https://www.amazon.com/dp/B08LGLF969/ref=cm_sw_r_api_i_P77G55N2JFG7JCGPCT3Y_0"
+            whitneyItem: "Bike Lights",
+            description: "1",
+            link: "https://www.amazon.com/dp/B08LGLF969/ref=cm_sw_r_api_i_P77G55N2JFG7JCGPCT3Y_0"
         },
         {
             id: 2,
-            item: "Bombas socks",
-            quantity: "2 pair",
-            description: "low cut"
+            whitneyItem: "Bombas socks",
+            description: "2 pair, low cut",
+            link: ""
         },
         {
             id: 3,
-            item: "Snow gloves",
-            quantity: "1 pair",
-            description: "warm and waterproof"
+            whitneyItem: "Snow gloves",
+            description: "1 pair, warm and waterproof",
+            link: ""
         }
     ],
     eddieWishList:[
         {
             id: 1,
-            item: "Rollerblades",
-            quantity: "1",
-            description: "https://www.amazon.com/dp/B09KC3LHYN/ref=cm_sw_r_api_i_1T25820AGZN9YRVKHF12_0?_encoding=UTF8&psc=1"
+            eddieItem: "Rollerblades",
+            description: "1, size 10 ",
+            link: "https://www.amazon.com/dp/B09KC3LHYN/ref=cm_sw_r_api_i_1T25820AGZN9YRVKHF12_0?_encoding=UTF8&psc=1"
         },
         {
             id: 2,
-            item: "Melodica",
-            quantity: "1",
-            description: "https://www.amazon.com/dp/B000XYFBMK/ref=cm_sw_r_api_i_46PPMTMC10ZTVH1KZWSQ_0?_encoding=UTF8&psc=1"
+            eddieItem: "Melodica",
+            description: "Just like John Batiste!",
+            link: "https://www.amazon.com/dp/B000XYFBMK/ref=cm_sw_r_api_i_46PPMTMC10ZTVH1KZWSQ_0?_encoding=UTF8&psc=1"
         }
     ] 
 }
