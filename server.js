@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const lists = require('./lists');
-let postID = 100
-// const { response } = require('express');
+ const {v4 : uuidV4} = require('uuid')
 
 app.use(express.json());
 app.use(cors());
@@ -28,49 +27,51 @@ app.get('/lists', (request, response) => {
   
 app.post('/lists', (request, response) => {
   if(request.body.groceryItem) {
-    const {id, groceryItem, quantity, description} = request.body;
+    const { groceryItem, quantity, description} = request.body;
 
-    if (!id || !groceryItem || !quantity || !description) {
+    if (!groceryItem || !quantity || !description) {
       return response.status(422).json({
-        error: 'Expected format { id: <Number>, groceryItem: <String>, quantity: <String>, description: <String> }. You are missing a required parameter.'
+        error: 'Expected format { groceryItem: <String>, quantity: <String>, description: <String> }. You are missing a required parameter.'
       })
     }
+    let postID = uuidV4()
   
     const newItem = {id: postID, groceryItem, quantity, description};
-    postID += 1
   
     app.locals.lists.groceries = [...app.locals.lists.groceries, newItem];
   
     return response.status(201).json(newItem)
    
   } else if(request.body.whitneyItem) {
-    const {id, whitneyItem, link, description} = request.body;
+    const {whitneyItem, link, description} = request.body;
 
-    if (!id || !whitneyItem || !link || !description) {
+    if (!whitneyItem || !link || !description) {
       return response.status(422).json({
-        error: 'Expected format { id: <Number>, whitneyItem: <String>, link: <String>, description: <String> }. You are missing a required parameter.'
+        error: 'Expected format { whitneyItem: <String>, link: <String>, description: <String> }. You are missing a required parameter.'
       })
     }
 
+    let postID = uuidV4()
+
     const newItem = {id: postID, whitneyItem, link, description};
-    postID += 1
+   
 
     app.locals.lists.whitWishList = [...app.locals.lists.whitWishList, newItem];
 
     return response.status(201).json(newItem)
     
   } else if(request.body.eddieItem) {
-    const {id, eddieItem, link, description} = request.body;
+    const {eddieItem, link, description} = request.body;
 
-    if (!id || !eddieItem || !link || !description) {
+    if (!eddieItem || !link || !description) {
       return response.status(422).json({
-        error: 'Expected format { id: <Number>, eddieItem: <String>, link: <String>, description: <String> }. You are missing a required parameter.'
+        error: 'Expected format { eddieItem: <String>, link: <String>, description: <String> }. You are missing a required parameter.'
       })
     }
+    let postID = uuidV4()
 
     const newItem = {id: postID, eddieItem, link, description};
-    postID += 1
-
+ 
     app.locals.lists.eddieWishList = [...app.locals.lists.eddieWishList, newItem];
 
     return response.status(201).json(newItem)
