@@ -2,7 +2,7 @@
 [Deployed Express Server](https://pure-sands-51403.herokuapp.com/lists/)
 
 ## Abstract
-This API was designed to pair with this showcase project [here](https://github.com/edjrodriguez/The-Lists). 
+This API was designed to pair with this showcase project [here](https://github.com/edjrodriguez/The-Lists) 
 as outlined by this project spec - [Project Spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 
 ## Technologies Used
