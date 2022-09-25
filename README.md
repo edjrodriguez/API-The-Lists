@@ -3,7 +3,7 @@
 
 ## Abstract
 This API was designed to pair with this showcase project [here](https://github.com/edjrodriguez/The-Lists) 
-as outlined by this project spec - [Project Spec](https://frontend.turing.edu/projects/module-3/showcase.html)
+as outlined by this [project spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 
 ## Technologies Used
 - Express 
