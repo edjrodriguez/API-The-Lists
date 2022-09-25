@@ -1,4 +1,4 @@
-# The Lists API
+# The Lists - API
 [Deployed Express Server](https://pure-sands-51403.herokuapp.com/lists/)
 
 ## Abstract
